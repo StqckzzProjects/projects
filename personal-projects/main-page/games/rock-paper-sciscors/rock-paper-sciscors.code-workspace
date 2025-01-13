@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"name": "rock-paper-sciscors",
+			"path": "."
+		},
+		{
+			"name": "images",
+			"path": "../images"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "rock-paper-sciscors"
+	}
+}

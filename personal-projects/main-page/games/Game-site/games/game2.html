@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game 1</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header>
+        <h1>Game 1</h1>
+        <a href="../index.html">Back to Home</a>
+    </header>
+    <main>
+        <button id="fullscreenBtn">Go Fullscreen</button>
+        <iframe id="gameFrame" src="https://play.famobi.com/moto-x3m-pool-party" width="800" height="600" frameborder="0"></iframe>
+    </main>
+    <footer>
+        <p>&copy; 2024 My Gaming Website</p>
+    </footer>
+    <script src="../script.js"></script>
+    <script>
+        const fullscreenBtn = document.getElementById('fullscreenBtn');
+        const gameFrame = document.getElementById('gameFrame');
+
+        fullscreenBtn.addEventListener('click', () => {
+            if (!document.fullscreenElement) {
+                gameFrame.requestFullscreen().catch(err => {
+                    console.error(`Error attempting to enable full-screen mode: ${err.message}`);
+                });
+            } else {
+                document.exitFullscreen();
+            }
+        });
+    </script>
+</body>
+</html>

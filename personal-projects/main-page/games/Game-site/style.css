@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000; /* Set background to black */
+    color: #fff; /* Default text color to white for contrast */
+}
+
+header {
+    background: #333; /* Darker header for contrast */
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #00f; /* Set navigation links to blue */
+    text-decoration: none;
+}
+
+#game-thumbnails {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+}
+
+#game-thumbnails a {
+    margin: 10px;
+}
+
+#game-thumbnails img {
+    width: 150px;
+    height: auto;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #333;
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+nav ul li a:hover {
+    text-decoration: underline; /* Underline on hover */
+    color: #00ccff; /* Change color on hover */
+}
+button {
+    margin: 20px;
+    padding: 10px 15px;
+    background-color: #007bff; /* Blue background */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+.project {
+    background: rgba(217, 217, 217, 0.8); /* Semi-transparent white color */
+    letter-spacing: 2px;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.6); /* Soft glow effect */
+    font-weight: bold; /* Make the text bold for better visibility */
+}

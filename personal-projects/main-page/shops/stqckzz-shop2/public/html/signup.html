@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Website</title>
+    <link rel="stylesheet" href="/main-page/shops/stqckzz-shop2/public/css/style.css">
+</head>
+<body>
+
+    <section>
+        <header>
+            <div class="circle"></div>
+            <div class="circles"></div>
+            <a href="#" class="logo">STQCKZZ <span>Designzz</span></a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="updates.html">News</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="cart.html">Cart</a></li>
+            </ul>
+            <p><a href="signup.html">Sign Up</a></p>
+        </header>
+        <div class="sign-up">
+            <form id="signup-form" onsubmit="signUpUser(event)">
+                <h2>Sign Up</h2>
+                <input type="text" id="signup-username" placeholder="Username" required />
+                <input type="email" id="signup-email" placeholder="Email" required />
+                <input type="password" id="signup-password" placeholder="Password" required />
+                <label>
+                    <input type="checkbox" onclick="togglePasswordVisibility('signup-password')"> Show Password
+                </label>
+                <button type="submit">Sign Up</button>
+                <p>Already have an account?<a href="signin.html">Click here to sign in!</a></p>
+            </form>
+        </div>
+    </section>
+    <script src="/main-page/shops/stqckzz-shop2/public/js/signup.js"></script>
+</body>

@@ -1,0 +1,6 @@
+.project {
+    background: rgba(217, 217, 217, 0.8); /* Semi-transparent white color */
+    letter-spacing: 2px;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.6); /* Soft glow effect */
+    font-weight: bold; /* Make the text bold for better visibility */
+}

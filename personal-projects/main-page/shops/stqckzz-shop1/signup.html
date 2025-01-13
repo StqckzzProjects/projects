@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="signup.css">
+    <title>Sign Up - EBK's Customs</title>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <h1>EBK's Customs</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="cart.html">Cart</a></li>
+                    <li><a href="signin.html" id="signin-link">Sign In</a></li>
+                    <li><a href="signup.html">Create Account</a></li>
+                    <li><img id="profile-pic" src="" alt="Profile Picture" style="width: 40px; height: 40px; border-radius: 50%;"></li>
+                </ul>
+            </nav>
+        </div>
+    </header>    
+    <main>
+        <h2>Create Account</h2>
+        <form id="signup-form">
+            <label for="signup-email">Email:</label><br>
+            <input type="email" id="signup-email" name="signup-email" required><br>
+            <label for="signup-password">Password:</label><br>
+            <input type="password" id="signup-password" name="signup-password" required><br>
+            <button type="submit">Sign Up</button>
+        </form>
+        <div id="signup-message"></div>
+    </main>
+    <footer>
+        <p>&copy; 2024 EBK's Customs</p>
+    </footer>
+    <script src="js/scripts.js"></script>
+</body>
+</html>

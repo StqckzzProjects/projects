@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Website</title>
+    <link rel="stylesheet" href="/main-page/shops/stqckzz-shop2/public/css/style.css">
+</head>
+<body>
+
+    <section>
+        <header>
+            <div class="circle"></div>
+            <div class="circles"></div>
+            <a href="#" class="logo">STQCKZZ <span>Designzz</span></a>
+            <a class="project" href="/main-page/projects.html">All Projects</a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="updates.html">News</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="cart.html">Cart</a></li>
+            </ul>
+            <p><a href="signin.html">Sign In</a></p>
+        </header>
+
+        <div class="texts">
+            <h1>Stqckzz <span>Designzz</span></h1>
+            <p>
+            </p>
+        </div>
+
+        <div class="background_image">
+            <img src="/main-page/shops/stqckzz-shop2/public/image/Logo.JPEG">
+        </div>
+
+        <div class="btn">
+            <p class="read"><a href="about.html">Read More</a></p>
+            <p><a href="products.html">Shop Now</a></p>
+        </div>
+    </section>
+
+
+
+
+    <!--About Page-->
+    
+    
+    <div class="about">
+        <div class="box">
+            <div class="card">
+                <img src="/main-page/shops/stqckzz-shop2/public/image/Computer.png">
+            </div>
+            <div class="card">
+                <img src="/main-page/shops/stqckzz-shop2/public/image/gift.png">
+            </div>
+            <div class="card">
+                <img src="/main-page/shops/stqckzz-shop2/public/image/TShirt.PNG">
+            </div>
+            <div class="card">
+                <img src="/main-page/shops/stqckzz-shop2/public/image/food.png">
+            </div>
+            <div class="card">
+                <img src="/main-page/shops/stqckzz-shop2/public/image/mobile.png">
+            </div>
+        </div>
+        <hr>
+    
+        <div class="Clothes">
+            <h1>Products</h1>
+            <p>----Clothes----</p>
+            </div>
+           <section>
+            <div class="slideshow-container">
+                <div class="slide fade">
+                    <img src="/main-page/shops/stqckzz-shop2/public/image/Sweater.PNG" alt="Image 1">
+                </div>
+                <div class="slide fade">
+                    <img src="/main-page/shops/stqckzz-shop2/public/image/TShirt.PNG" alt="Image 2">
+                </div>
+</div>
+            <div class="dot-container">
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+           </section>
+    <!--fotter-->
+
+    <footer class="footer">
+        <div class="main">
+            <div class="row">
+                <div class="footer_col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">about us</a></li>
+                        <li><a href="about.html">our services</a></li>
+                        <li><a href="policy.html">privacy policy</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer_col">
+                    <h4>Get Help</h4>
+                    <ul>
+                        <li><a href="comingsoon.html">shiping</a></li>
+                        <li><a href="comingsoon.html">returns</a></li>
+                        <li><a href="comingsoon.html">payment options</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer_col">
+                    <h4>Online</h4>
+                    <ul>
+                        <li><a href="products.html">T-Shirt</a></li>
+                        <li><a href="products.html">Hoodie</a></li>
+                        <li><a href="products.html">Pants</a></li>
+                        <li><a href="products.html">Hat</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer_col">
+                    <h4>Follower us</h4>
+                    <div class="social">
+                        <a href="gmail.com"><img src="/main-page/shops/stqckzz-shop2/public/image/Googlell.png"></a>
+                        <a href="https://www.instagram.com/stqckzz_designz/"><img src="/main-page/shops/stqckzz-shop2/public/image/instagram.png"></a>
+                    </div>               
+                        
+                    
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        let slideIndex = 0;
+        showSlides();
+    
+        function showSlides() {
+            const slides = document.querySelectorAll(".slide");
+            const dots = document.querySelectorAll(".dot");
+            slides.forEach((slide, index) => {
+                slide.style.display = "none"; // Hide all slides
+                dots[index].classList.remove("active"); // Deactivate all dots
+            });
+            slideIndex++;
+            if (slideIndex > slides.length) slideIndex = 1;
+            slides[slideIndex - 1].style.display = "block"; // Show current slide
+            dots[slideIndex - 1].classList.add("active"); // Activate current dot
+            setTimeout(showSlides, 3000); // Change slide every 3 seconds
+        }
+    </script>    
+</body>
+</html>

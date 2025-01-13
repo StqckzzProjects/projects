@@ -1,0 +1,201 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.main-menu {
+    margin-top: 50px;
+}
+
+.menu-buttons {
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #002aff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 10px;
+    width: 200px;
+}
+
+button:hover {
+    background-color: #ffffff;
+}
+
+.game-container {
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+#gameBoard {
+    display: grid;
+    gap: 5px;
+    margin: 20px auto;
+    width: fit-content;
+    justify-content: center;
+    grid-template-columns: repeat(3, 60px);
+    grid-template-rows: repeat(3, 60px);
+}
+
+#gameBoard div {
+    width: 60px;
+    height: 60px;
+    background-color: #f0f0f0;
+    border: 1px solid #a31e1e;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #16079f;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.logs {
+    width: 300px;
+    margin-left: 20px;
+    text-align: left;
+}
+
+.logs h3 {
+    margin-bottom: 10px;
+}
+
+.logs ul {
+    list-style: none;
+    padding-left: 0;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.logs li {
+    padding: 5px;
+    background-color: #000000;
+    border-bottom: 1px solid #0400fb;
+}
+/* General Reset and Body Setup */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Prevent scrolling */
+    background: #000; /* Dark background for Milky Way theme */
+    color: white;
+}
+
+/* Milky Way Background */
+.milky-way {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://www.wallpapers13.com/wp-content/uploads/2016/12/milky-way-galaxy-stars-wallpaper-1920x1080.jpg') no-repeat center center fixed;
+    background-size: cover;
+    z-index: -1;
+}
+
+/* Stars */
+.star {
+    position: absolute;
+    border-radius: 50%;
+    background: white;
+    animation: moveStars 20s linear infinite;
+    opacity: 0.5;
+}
+
+/* Animations for the stars moving */
+@keyframes moveStars {
+    from {
+        transform: translateY(-100px);
+    }
+    to {
+        transform: translateY(100vh);
+    }
+}
+
+/* Spaceships */
+.ship {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: url('https://www.pngkit.com/png/full/10-102317_spaceship-clipart-spaceship-clip-art.png') no-repeat center center;
+    background-size: contain;
+    animation: moveShips 25s linear infinite;
+}
+
+@keyframes moveShips {
+    from {
+        transform: translateX(-100px) translateY(-100px);
+    }
+    to {
+        transform: translateX(100vw) translateY(100vh);
+    }
+}
+
+/* Game Container */
+.game-container {
+    position: relative;
+    z-index: 1;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Header */
+h1 {
+    z-index: 2;
+    font-size: 36px;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+}
+
+/* Logs */
+.logs {
+    z-index: 2;
+    width: 300px;
+    margin-left: 20px;
+    text-align: left;
+    font-size: 14px;
+}
+
+/* Buttons */
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 10px;
+    width: 200px;
+    z-index: 2;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.project {
+    background: rgba(217, 217, 217, 0.8); /* Semi-transparent white color */
+    letter-spacing: 2px;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.6); /* Soft glow effect */
+    font-weight: bold; /* Make the text bold for better visibility */
+}
